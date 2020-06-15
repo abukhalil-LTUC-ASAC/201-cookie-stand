@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap');
+
+@font-face {
+  font-family: Roboto, sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto);
+}
+@font-face {
+  font-family: 'Playfair Display', serif;
+  src: url(https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap);
+}
+@font-face {
+  font-family: Oswald, sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Oswald);
+  unicode-range: U+30-39;
+}
+body {
+  font-family: Roboto, Oswald, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  font-family: 'Playfair Display', serif;
+  background-color: #013896;
+  color: #f1f1f1;
+  }
+
+.header {
+  height: 60px;
+  padding: 20px;
+  width: 100%;
+  background-color: #758899;
+  display: -webkit-inline-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+#logo {
+  /* float: left; */
+  width: auto;
+  max-height: 40px;
+}
+
+.header > * {
+  font-size: 25px;
+  color: #000;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+        /* Style the navbar */
+        #navbar {
+          overflow: hidden;
+          background-color: #959bb2;
+          text-align: center;
+          display: -webkit-inline-box;
+          -webkit-box-align: center;
+          -webkit-box-pack: center;
+          width: 100%;
+        }
+
+        /* Navbar links */
+        #navbar a {
+          /* float: left; */
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+        }
+
+        /* Page content */
+        .content {
+          padding: 16px;
+        }
+
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+          padding-top: 60px;
+        }
+
+main {
+  padding: 30px;
+  min-height: 500px;
+}
+
+
+table {
+  display: table;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-style: solid;
+  border-width: 0.5px;
+  margin-bottom: 20px;
+}
+
+#cities thead {
+  background-color: #7b7b7b;
+  color: white;
+}
+#tossers thead {
+  background-color: #b45f5f;
+  color: white;
+}
+
+thead td {
+  border: none;
+  padding: 20px 20px;
+}
+
+tfoot {
+  font-weight: 700;
+}
+
+tr:nth-child(even), tfoot tr {
+  background-color: #f2f2f2;
+}
+
+tbody td, tfoot td{
+  padding: 15px;
+}
+
+td {
+  width: 5%;
+  vertical-align: middle;
+
+}
+footer, footer a {
+  text-align: center;
+  background-color: #4f697c;
+  color: white;
+  line-height: 1.2;
+}
+
+footer > * {
+  padding: 10px;
+}

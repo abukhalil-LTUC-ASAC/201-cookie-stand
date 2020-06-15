@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.png">
   </head>
   <body>
     <header>
-      <p><a href="index.html">Back to home page.</a></p>
+      <div class="header">
+        <p id="title">This is a page about cookies and a salmon.</p>
+        <p id="link"><a href="sales.html">Re-calculate some numbers!</a></p>
+      </div>
+      <div id="navbar">
+        <img id="logo" src="img/salmon.png" alt="A Salmon.">
+        <a href="index.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
     </header>
-    <main id="cities">
-
+    <main>
+      <div style="overflow-x:auto;" id="cities">
+      </div>
+      <div style="overflow-x:auto;" id="tossers">
+      </div>
     </main>
     <footer>
-
+      <p>Author: Daisy Maclarren<br>
+      <a href="mailto:daisy@example.com">daisy@example.com</a></p>
     </footer>
   </body>
   <script src="js/app.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/tossers.js"></script>
+  <script src="js/nav.js"></script>
 </html>
