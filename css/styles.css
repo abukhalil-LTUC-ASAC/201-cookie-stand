@@ -93,49 +93,49 @@ main {
   min-height: 500px;
 }
 
+        /* Table styling */
+        table {
+          display: table;
+          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+          border-collapse: collapse;
+          border-style: solid;
+          border-width: 0.5px;
+          margin-bottom: 20px;
+        }
 
-table {
-  display: table;
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border-style: solid;
-  border-width: 0.5px;
-  margin-bottom: 20px;
-}
+        #cities thead {
+          background-color: #7b7b7b;
+          color: white;
+        }
+        #tossers thead {
+          background-color: #b45f5f;
+          color: white;
+        }
 
-#cities thead {
-  background-color: #7b7b7b;
-  color: white;
-}
-#tossers thead {
-  background-color: #b45f5f;
-  color: white;
-}
+        thead td {
+          border: none;
+          padding: 20px 20px;
+        }
 
-thead td {
-  border: none;
-  padding: 20px 20px;
-}
+        tfoot {
+          font-weight: 700;
+        }
 
-tfoot {
-  font-weight: 700;
-}
+        tr:nth-child(even), tfoot tr {
+          background-color: #f2f2f2;
+        }
 
-tr:nth-child(even), tfoot tr {
-  background-color: #f2f2f2;
-}
+        tbody td, tfoot td{
+          padding: 15px;
+        }
 
-tbody td, tfoot td{
-  padding: 15px;
-}
+        td {
+          width: 5%;
+          vertical-align: middle;
 
-td {
-  width: 5%;
-  vertical-align: middle;
-
-}
+        }
 footer, footer a {
   text-align: center;
   background-color: #4f697c;
