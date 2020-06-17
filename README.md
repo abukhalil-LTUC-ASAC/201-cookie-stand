@@ -5,14 +5,15 @@ Concepts
 - [x] Making Objects
 - [x] Refactoring to Constructor/Functions
 - [x] Generating Tables
-- [] Making sense of CSS
-- [] N/A
-- [] N/A
+- [x] Making sense of CSS
+- [] Dynamic content generation (with stylings and layout)
+- [x] Input validation
+- [x~] Update or Add JS functions (needs more robust string input condition)
 
 Bugs & To-do List
 - [x] Apply CSS
-- [] Apply more CSS
+- [x~] Apply more CSS
 - [] Fix conditional fonts
 - [] Make table generation easier
-- [] better navbar sticky
+- [x] better navbar sticky
 - [] better favicon

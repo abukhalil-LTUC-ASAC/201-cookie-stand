@@ -21,6 +21,15 @@ a {
   text-decoration: none;
 }
 
+h1 {
+    text-align: center;
+    color: #364a4b;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    padding: 0;
+    font-weight: 600;
+}
+
 ::selection {
   font-family: 'Playfair Display', serif;
   background-color: #013896;
@@ -59,6 +68,7 @@ a {
           -webkit-box-align: center;
           -webkit-box-pack: center;
           width: 100%;
+          z-index: 10;
         }
 
         /* Navbar links */
@@ -102,7 +112,16 @@ main {
           border-collapse: collapse;
           border-style: solid;
           border-width: 0.5px;
-          margin-bottom: 20px;
+        }
+        caption {
+          display: table-caption;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        table:first-of-type {
+          width: 100%;
+          margin-bottom: 0  px;
         }
 
         #cities thead {
@@ -123,8 +142,16 @@ main {
           font-weight: 700;
         }
 
-        tr:nth-child(even), tfoot tr {
+        tfoot tr {
+          background-color: #606e83;
+          color: white;
+        }
+
+        tbody tr:nth-child(even)  {
           background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(odd)  {
+          background-color: white;
         }
 
         tbody td, tfoot td{
