@@ -1,6 +1,7 @@
 // adds Second table to the HTML file
-var TossersHourly = [];
+
 function getHourlyTossers(){
+  TossersHourly = [];
   for(var i = 0; i < openingHours.length; i++) {						
     sum = 0;
     for(var j = 0; j < cities.length; j++) {		
@@ -27,6 +28,8 @@ function renderToss() {
   table.appendChild(tbody);
   var tfoot = document.createElement("tfoot"); // table footer
   table.appendChild(tfoot);
+
+
   var trh = document.createElement("tr"); // row data header
   thead.appendChild(trh);
   var tdh = document.createElement("td"); // first cell of header is empty
