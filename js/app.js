@@ -7,3 +7,32 @@ var cityObjects = [];
 // var cityNames = [];
 var totalHourly = [];    
 var TossersHourly = [];
+
+// Interactive Navigation Button
+var thisTab = 1;
+var nextTab = document.getElementById("nextNav");
+var prevTab = document.getElementById("prevNav");
+
+nextTab.addEventListener("click", changeTabNext);
+prevTab.addEventListener("click", changeTabPrev);
+
+function changeTabNext() {
+  thisTab += 1;
+  console.log(thisTab)
+  if (thisTab > 3) {
+    thisTab = 1;
+  }
+  var tab = document.getElementById("tab"+thisTab)
+  openPage(thisTab, tab, 'rgba(11,22,33,0.9)');
+
+}
+function changeTabPrev() {
+  thisTab -= 1;
+  console.log(thisTab)
+  if (thisTab < 1) {
+    thisTab = 3;
+  }
+  var tab = document.getElementById("tab"+thisTab)
+  openPage(thisTab, tab, 'rgba(11,22,33,0.9)');
+
+}
