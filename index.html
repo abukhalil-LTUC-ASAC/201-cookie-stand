@@ -3,67 +3,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salmon Cookies</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/main-side.css">
+  <link rel="stylesheet" href="css/tab.css">
+  <link rel="stylesheet" href="css/image.css">
   <link rel="stylesheet" href="css/tabs.css">
+
   <link rel="icon" href="img/salmon.ico">
-  <title>Home Page</title>
 </head>
 <body>
   <header>
-    <div class="header">
+    <div class="header clearfix" >
+      <a href="index.html"><img id="logo" src="img/salmon.png" alt="A Salmon."></a>
       <p id="title">This is a page about cookies and a salmon.</p>
-      <p id="link"><a href="sales.html">Calculate some numbers!</a></p>
     </div>
-    <div id="navbar">
-      <img id="logo" src="img/salmon.png" alt="A Salmon.">
-      <a href="index.html">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <button class="tablink" onclick="openPage('Home', this, 'rgba(11,22,33,0.9)')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Calculate', this, 'rgba(11,22,33,0.9)')">Calculate some estimates!</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'rgba(11,22,33,0.9)')">Contact</button>
   </header>
+
   <main>
-    <div class="wrapper">
-      <div class="tab">
-        <input name="tabs" class="input" id="tab-one" type="checkbox" />
-        <label class="label" for="tab-one">Label One</label>
-        <div class="tab-content">
-          <div class="container">
-            <div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><style>
-              .cms-page-view .page-wrapper { background:#fff !important; }
-              </style>
-              <center><h3>CONTACT US</h3></center>
-              <strong>Phone:</strong><br>
-              800.821.7930<br>
-              (Monday - Friday 8:00 a.m. - 5:00 p.m. CST)<br><br>
-              <strong>Live Chat:</strong><br>
-              (Monday - Friday 8:00 a.m. - 5:00 p.m. CST)<br>
-              <u><a href="http://www.livehelpnow.net/lhn/lcv.aspx?d=0&amp;ms=&amp;zzwindow=0&amp;lhnid=19597&amp;custom1=&amp;custom2=&amp;custom3=&amp;time=3/23/2016%209:13:02%20AM" target="popup" onclick="window.open('http://www.livehelpnow.net/lhn/lcv.aspx?d=0&amp;ms=&amp;zzwindow=0&amp;lhnid=19597&amp;custom1=&amp;custom2=&amp;custom3=&amp;time=3/23/2016%209:13:02%20AM','name','width=600,height=400')">Chat with us.</a></u><br><br>
-              <strong>Email:</strong><br>
-              <u><a href="mailto:orderpro@everlast.com">orderpro@everlast.com</a></u><br><br>
-              <strong>Fax:</strong><br>
-              800.480.0348&nbsp;<br><br>
-              <strong>Mailing Address:</strong><br>Everlast Customer Service<br>1900 Highway DD&nbsp;<br>Moberly, MO 65270<p></p>
-              <strong>For sponsorship inquiries, please send an email to&nbsp;<u><a href="mailto:sponsorships@everlast.com">sponsorships@everlast.com</a></u></strong></div>
+    <!-------------------- Home Tab -------------------->
+    <div id="Home" class="tabcontent">
+      <h1>Let's get started!</h1>
+      <div class="containerbg">
+        <img src="img/family.jpg" alt="family" class="bg">
+        <div class="centered">
+          <p>Welcome to Chinook Salmon cookie store.</p>
+          <hr>
+          <p>Be a part of our family!</p>
+        </div>
+      </div>
+      <!-- Container for the image gallery -->
+      <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <div class="containerImg">
+            <img src="img/fish.jpg" alt="fish" class="image" onclick="currentSlide(1)" style="width:100%">
+            <div class="overlay" onclick="plusSlides(1)">
+              <div class="text">So what are we? Not a fish company that is for sure.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <div class="containerImg">
+            <img src="img/frosted-cookie.jpg" alt="Frosted Cookie" class="image" onclick="currentSlide(2)" style="width:100%">
+            <div class="overlay" onclick="plusSlides(1)">
+              <div class="text">We sell cookies</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <div class="containerImg">
+            <img src="img/salmon.png" alt="Salmon" class="image" onclick="currentSlide(3)" style="width:100%">
+            <div class="overlay" onclick="plusSlides(1)">
+              <div class="text">In the shape of a salmon. <br> I don't even like salmon<br>But my wife loves sushi..</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <div class="containerImg">
+            <img src="img/chinook.jpg" alt="Chinook Salmon" class="image" onclick="currentSlide(4)" style="width:100%">
+            <div class="overlay" onclick="plusSlides(1)">
+              <div class="text">But did you know? <br> The Chinook salmon is the largest species 
+                in the Pacific salmon genus Oncorhynchus. The common name refers to the Chinookan peoples. 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <div class="containerImg">
+            <img src="img/cutter.jpeg" alt="Tools" class="image" onclick="currentSlide(5)" style="width:100%">
+            <div class="overlay" onclick="plusSlides(1)">
+              <div class="text">And this is how we do it.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <div class="containerImg">
+            <img src="img/shirt.jpg" alt="Merch" class="image" onclick="currentSlide(6)" style="width:100%">
+            <div class="overlay" onclick="plusSlides(1)">
+              <div class="text">Do join us, and buy a cool shirt while you are at it!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img src="img/fish.jpg" alt="Fish" class="demo cursor" onclick="currentSlide(1)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img/frosted-cookie.jpg" alt="Frosted Cookie" class="demo cursor" onclick="currentSlide(2)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img/salmon.png" alt="Salmon" class="demo cursor" onclick="currentSlide(3)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img/chinook.jpg" alt="Chinook Salmon" class="demo cursor" onclick="currentSlide(4)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img/cutter.jpeg" alt="Tools" class="demo cursor" onclick="currentSlide(5)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img/shirt.jpg" alt="Merch" class="demo cursor" onclick="currentSlide(6)" style="width:100%">
           </div>
         </div>
       </div>
-      <div class="tab">
-        <input name="tabs" class="input" id="tab-two" type="checkbox" />
-        <label class="label" for="tab-two">Submit Locations</label>
-        <div class="tab-content">
-          <div class="container">
-            
-            <strong>For sponsorship inquiries, please send an email to&nbsp;<u><a href="mailto:sponsorships@everlast.com">sponsorships@everlast.com</a></u></strong></div>
+    </div>
+    <!-------------------- Calculate Tab -------------------->
+    <div id="Calculate" class="tabcontent">
+      <h1>Cookies Sold</h1>
+      <div class="grid-container">
+        <div class="sidebar sidebar_small">
+          <button>Add Locations</button>
+          <fieldset>
+            <legend>New Location</legend>
+            <form id="locationForm">
+              <label for="locName">location</label><br>
+              <input type="text" id="locName" name="locName" required ><br><br>
+              <label for="minCus">Minimum Hourly Customers</label>
+              <input type="number" id="minCus" name="minCus" required placeholder="Predicted Per Hour!"><br><br>
+              <label for="maxCus">Maximum Hourly Customers</label>
+              <input type="number" id="maxCus" name="maxCus" required placeholder="Predicted Per Hour!"><br><br>
+              <label for="avgCookies">Average Cookies per Customer</label>
+              <input type="number" id="avgCookies" name="avgCookies" required placeholder="Predicted Average!"><br>
+              <hr>
+              <input type="submit" id="submitBtn">
+            </form>
+          </fieldset>
+        </div>
+
+        <div class="main-content main-content_large">
+          <div style="overflow-x:auto;" id="cities">
+          </div>
         </div>
       </div>
-    </div>
+
+        <h1 style="margin-top: 20px;">Tossers Hired</h1>
+        <div style="overflow-x:auto;" id="tossers">
+        </div>
+
+    </div>    
+    <!-------------------- Calculate Tab -------------------->
+    <div id="Contact" class="tabcontent">
+      <h1>Contact Us</h1>
+      <div class="wrapper">
+        <div class="tab">
+          <input name="tabs" class="input" id="tab-one" type="checkbox" />
+          <label class="label" for="tab-one">Label One</label>
+          <div class="tab-content">
+            <div class="container">
+              <div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><style>
+                .cms-page-view .page-wrapper { background:#fff !important; }
+                </style>
+                <h3>CONTACT US</h3>
+                <strong>Phone:</strong><br>
+                800.821.7930<br>
+                (Monday - Friday 8:00 a.m. - 5:00 p.m. CST)<br><br>
+                <strong>Live Chat:</strong><br>
+                (Monday - Friday 8:00 a.m. - 5:00 p.m. CST)<br>
+                <u><a href="http://www.livehelpnow.net/lhn/lcv.aspx?d=0&amp;ms=&amp;zzwindow=0&amp;lhnid=19597&amp;custom1=&amp;custom2=&amp;custom3=&amp;time=3/23/2016%209:13:02%20AM" target="popup" onclick="window.open('http://www.livehelpnow.net/lhn/lcv.aspx?d=0&amp;ms=&amp;zzwindow=0&amp;lhnid=19597&amp;custom1=&amp;custom2=&amp;custom3=&amp;time=3/23/2016%209:13:02%20AM','name','width=600,height=400')">Chat with us.</a></u><br><br>
+                <strong>Email:</strong><br>
+                <u><a href="mailto:orderpro@everlast.com">orderpro@everlast.com</a></u><br><br>
+                <strong>Fax:</strong><br>
+                800.480.0348&nbsp;<br><br>
+                <strong>Mailing Address:</strong><br>Everlast Customer Service<br>1900 Highway DD&nbsp;<br>Moberly, MO 65270<p></p>
+                <strong>For sponsorship inquiries, please send an email to&nbsp;<u><a href="mailto:sponsorships@everlast.com">sponsorships@everlast.com</a></u></strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
   </main>
+
   <footer>
-    <p>Author: Daisy Maclarren<br>
-    <a href="mailto:daisy@example.com">daisy@example.com</a></p>
+    <p>Author: Yahya Abu Khalil<br>
+    <a href="mailto:yahya_abukhaleel@hotmail.com">yahya_abukhaleel@hotmail.com</a></p>
   </footer>
-  <script src="js/app.js"></script>
-  <script src="js/nav.js"></script>
 </body>
+<script src="js/app.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/tossers.js"></script>
+<!-- <script src="js/nav.js"></script> -->
+<script src="js/form.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/slide.js"></script>
+
 </html>

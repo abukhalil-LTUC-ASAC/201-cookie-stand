@@ -11,10 +11,10 @@
 @font-face {
   font-family: Oswald, sans-serif;
   src: url(https://fonts.googleapis.com/css2?family=Oswald);
-  unicode-range: U+30-39;
+  unicode-range: U+0030-0039;
 }
 body {
-  font-family: Roboto, Oswald, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 a {
@@ -22,6 +22,7 @@ a {
 }
 
 h1 {
+    font-family: 'Playfair Display', serif;
     text-align: center;
     color: #364a4b;
     font-size: 2.5rem;
@@ -31,33 +32,31 @@ h1 {
 }
 
 ::selection {
-  font-family: 'Playfair Display', serif;
-  background-color: #013896;
+  background-color: #55007c;
   color: #f1f1f1;
   }
 
 .header {
-  height: 60px;
-  padding: 20px;
   width: 100%;
-  background-color: #758899;
-  display: -webkit-inline-box;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
+  text-align: center;
+  display: inline-flex;
+  place-content: center;
+
 }
 
 #logo {
-  /* float: left; */
-  width: auto;
   max-height: 40px;
+  padding-top: 5px;
 }
 
-.header > * {
+.header > p {
+  font-family: 'Playfair Display', serif;
   font-size: 25px;
   color: #000;
   font-weight: 500;
-  margin-left: 30px;
+  padding: 15px;
 }
+
 
         /* Style the navbar */
         #navbar {
@@ -90,7 +89,6 @@ h1 {
         .sticky {
           position: fixed;
           top: 0;
-          width: 100%;
         }
 
         /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -132,33 +130,25 @@ main {
           background-color: #b45f5f;
           color: white;
         }
-
         thead td {
           border: none;
           padding: 20px 20px;
         }
-
-        tfoot {
-          font-weight: 700;
-        }
-
         tfoot tr {
           background-color: #606e83;
           color: white;
         }
-
         tbody tr:nth-child(even)  {
           background-color: #f2f2f2;
         }
         tbody tr:nth-child(odd)  {
           background-color: white;
         }
-
         tbody td, tfoot td{
           padding: 15px;
         }
-
         td {
+          font-family: Oswald, sans-serif;
           width: 5%;
           vertical-align: middle;
 
@@ -172,4 +162,30 @@ footer, footer a {
 
 footer > * {
   padding: 10px;
+}
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+/* ------------------------- Scroll Bar ------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
