@@ -20,14 +20,14 @@
       <a href="index.html"><img id="logo" src="img/salmon.png" alt="A Salmon."></a>
       <p id="title">This is a page about cookies and a salmon.</p>
     </div>
-    <button class="tablink" onclick="openPage('Home', this, 'rgba(11,22,33,0.9)')" id="defaultOpen">Home</button>
-    <button class="tablink" onclick="openPage('Calculate', this, 'rgba(11,22,33,0.9)')">Calculate some estimates!</button>
-    <button class="tablink" onclick="openPage('Contact', this, 'rgba(11,22,33,0.9)')">Contact</button>
+    <button class="tablink" id="tab1" onclick="openPage('1', this, 'rgba(11,22,33,0.9)')">Home</button>
+    <button class="tablink" id="tab2" onclick="openPage('2', this, 'rgba(11,22,33,0.9)')">Calculate some estimates!</button>
+    <button class="tablink" id="tab3" onclick="openPage('3', this, 'rgba(11,22,33,0.9)')">Contact</button>
   </header>
 
   <main>
     <!-------------------- Home Tab -------------------->
-    <div id="Home" class="tabcontent">
+    <div id="1" class="tabcontent">
       <h1>Let's get started!</h1>
       <div class="containerbg">
         <img src="img/family.jpg" alt="family" class="bg">
@@ -136,7 +136,7 @@
       </div>
     </div>
     <!-------------------- Calculate Tab -------------------->
-    <div id="Calculate" class="tabcontent">
+    <div id="2" class="tabcontent">
       <h1>Cookies Sold</h1>
       <div class="grid-container">
         <div class="sidebar sidebar_small">
@@ -170,17 +170,19 @@
 
     </div>    
     <!-------------------- Calculate Tab -------------------->
-    <div id="Contact" class="tabcontent">
+    <div id="3" class="tabcontent">
       <h1>Contact Us</h1>
       <div class="wrapper">
         <div class="tab">
-          <input name="tabs" class="input" id="tab-one" type="checkbox" />
-          <label class="label" for="tab-one">Label One</label>
+          <input name="tabs" class="input" id="tab-one" type="checkbox" checked />
+          <label class="label" for="tab-one">Information</label>
           <div class="tab-content">
             <div class="container">
               <div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><style>
                 .cms-page-view .page-wrapper { background:#fff !important; }
                 </style>
+                <p><strong>Kept for its pure CSS functionalities</strong></p>
+                <br>
                 <h3>CONTACT US</h3>
                 <strong>Phone:</strong><br>
                 800.821.7930<br>
@@ -201,6 +203,11 @@
     </div>  
   </main>
 
+  <div class="floatBtn">  
+    <button id="nextNav">&#8594;</button>
+    <button id="prevNav">&#8592;</button>
+  </div>
+
   <footer>
     <p>Author: Yahya Abu Khalil<br>
     <a href="mailto:yahya_abukhaleel@hotmail.com">yahya_abukhaleel@hotmail.com</a></p>
@@ -209,7 +216,6 @@
 <script src="js/app.js"></script>
 <script src="js/cookies.js"></script>
 <script src="js/tossers.js"></script>
-<!-- <script src="js/nav.js"></script> -->
 <script src="js/form.js"></script>
 <script src="js/tab.js"></script>
 <script src="js/slide.js"></script>
