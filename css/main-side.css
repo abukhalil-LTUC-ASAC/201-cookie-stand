@@ -12,9 +12,10 @@
 }
 
 .main-content {
-  width: 70%;
+  width: 100%;
   transition: 1s ease;
   z-index: 1;
+  overflow: hidden;
 }
 
 .main-content_large {
