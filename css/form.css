@@ -3,14 +3,14 @@ fieldset {
   border-radius: 10px;
   border-width: 1px;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 legend {
   background-color: #dad8d8;
   border: 1px solid #dcdcdc;
   font-weight: bold;
-  width: 85%;
+  width: 300px;
   padding: 10px 20px;
   text-transform: uppercase;
   text-align: center;
@@ -36,7 +36,7 @@ fieldset input {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 300px;
   opacity: 0.9;
   font-size: large;
   text-transform: uppercase;
